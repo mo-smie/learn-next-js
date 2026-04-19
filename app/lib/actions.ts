@@ -1,6 +1,6 @@
 "use server";
 
-export default async function createInvoice(formData: FormData) {
+export async function createInvoice(formData: FormData) {
   const rawFormData = {
     customerId: formData.get("customerId"),
     amount: formData.get("amount"),
