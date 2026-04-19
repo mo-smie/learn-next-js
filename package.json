@@ -29,9 +29,10 @@
     "@types/react-dom": "19.0.3"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "bcrypt",
-      "sharp"
-    ]
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "next": "16"
+      }
+    }
   }
 }
